@@ -1,0 +1,10 @@
+version: "1"
+services:
+  aibbey-road-uplink:
+    # if something fails or the server is restarted, the container will restart
+    restart: always
+    container_name: night-watch-cam
+    image: night-watch-cam
+    build:
+      # build the iris clasifier image from the Dockerfile in the current directory
+      context: .
