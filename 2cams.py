@@ -6,7 +6,7 @@ app = Flask(__name__)
 #os.environ["QT_QPA_PLATFORM"] = "wayland"
 
 video = cv2.VideoCapture(0)
-video2 = cv2.VideoCapture(2)
+video2 = cv2.VideoCapture(1)
 
 '''
 
