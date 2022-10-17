@@ -1,7 +1,13 @@
 from flask import Flask, Response
 import cv2
+import os
 app = Flask(__name__)
+
+#os.environ["QT_QPA_PLATFORM"] = "wayland"
+
 video = cv2.VideoCapture(0)
+
+
 
 HOGCV = cv2.HOGDescriptor()
 HOGCV.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
@@ -32,7 +38,7 @@ def gen(video):
         success, image = video.read()
 
         # people detection
-        image = detect(image)
+        #image = detect(image)
 
         ret, jpeg = cv2.imencode('.jpg', image)
         frame = jpeg.tobytes()
