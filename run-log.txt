@@ -1,0 +1,30 @@
+moebius@moebius-Pad:~$ ssh moebius@moebius-nano.local
+moebius@moebius-nano.local's password:
+Welcome to Ubuntu 18.04.6 LTS (GNU/Linux 4.9.253-tegra aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+
+263 updates can be applied immediately.
+223 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Last login: Mon Oct 17 01:17:06 2022 from 192.168.55.100
+moebius@moebius-nano:~$ cd gits/NightWatch
+moebius@moebius-nano:~/gits/NightWatch$ source venvt/bin/activate
+(venvt) moebius@moebius-nano:~/gits/NightWatch$ python cam.py
+ * Serving Flask app 'cam' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://192.168.1.9:2204/ (Press CTRL+C to quit)
+192.168.1.2 - - [17/Oct/2022 01:26:48] "GET /video_feed HTTP/1.1" 200 -
+192.168.1.2 - - [17/Oct/2022 01:27:18] "GET /video_feed HTTP/1.1" 200 -
