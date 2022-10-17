@@ -7,10 +7,11 @@ app = Flask(__name__)
 
 video = cv2.VideoCapture(0)
 
+'''
 
+#HOGCV = cv2.HOGDescriptor()
+#HOGCV.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
-HOGCV = cv2.HOGDescriptor()
-HOGCV.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
 
 def detect(frame):
@@ -27,7 +28,7 @@ def detect(frame):
     cv2.imshow('output', frame)
 
     return frame
-
+'''
 
 @app.route('/')
 def index():
