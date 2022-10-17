@@ -1,0 +1,6 @@
+{
+    "person-detection": "False",
+    "version": "1.0.0",
+    "description": "A simple camera with Flask",
+    "main": "cam.py"
+}
