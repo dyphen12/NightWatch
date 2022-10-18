@@ -5,6 +5,11 @@ app = Flask(__name__)
 
 #os.environ["QT_QPA_PLATFORM"] = "wayland"
 
+#debug laptop
+#video = cv2.VideoCapture(0)
+#video2 = cv2.VideoCapture(2)
+
+#debug nano
 video = cv2.VideoCapture(-1)
 video2 = cv2.VideoCapture(1)
 
